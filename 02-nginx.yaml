@@ -14,4 +14,3 @@
     ansible.builtin.dnf:
       name: nginx
       enabled: yes
-
