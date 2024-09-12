@@ -1,5 +1,5 @@
 - name: install and  run nginx 
-  hosts: web
+  hosts: 172.31.18.65
   become: yes #equal to -b abhoc commands, getting the root acce
   tasks:
   - name: install nginx
@@ -10,4 +10,3 @@
     ansible.builtin.service:
       name: nginx
       state: started
-      
