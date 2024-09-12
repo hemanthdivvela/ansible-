@@ -10,6 +10,7 @@
     ansible.builtin.dnf:
       name: nginx
       state: started
+      
   - name: enable nginx 
     ansible.builtin.dnf:
       name: nginx
