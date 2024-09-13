@@ -6,7 +6,7 @@
     - Linux
     - shell
     - Ansible
-    Experirnce: # map or dictinory
+    Experiernce: # map or dictinory
       Devops: 3 # number
       Aws: 2
       Docker: 1
@@ -14,4 +14,4 @@
   tasks:
   - name: print variables
     ansible.builtin.debug:
-      msg: "course: {{Course}}, Tools coverd: {{Tools}}, Experirnce is:{{Experirnce}}, is realproject: {{Realproject:}}"
+      msg: "course: {{Course}}, Tools coverd: {{Tools}}, Experirnce is:{{Experiernce}}, is realproject: {{Realproject:}}"
