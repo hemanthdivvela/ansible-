@@ -6,7 +6,7 @@
     - Linux
     - shell
     - Ansible
-    Experiernce: # map or dictinory
+    Experience: # map or dictinory
       Devops: 3 # number
       Aws: 2
       Docker: 1
