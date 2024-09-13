@@ -5,6 +5,6 @@
   tasks:
     - name: print vars.yaml information
       ansible.builtin.debug:
-      msg: "Hi, we are learning {{courses}} from Trainer {{Trainer}}, Duraction is {{Duraction}}."
+        msg: "Hi, we are learning {{courses}} from Trainer {{Trainer}}, Duraction is {{Duraction}}."
 
 
