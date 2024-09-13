@@ -1,0 +1,16 @@
+- name: variables
+  hosts: localhost
+  vars: #variable declartion #play level variables 
+    courses: "Ansible"
+    Trainer: "hemanth"
+    Duraction: "2hrs"
+  tasks:
+  - name: print overrding information
+    vars: #task level variables 
+      courses: Devops
+    ansible.builtin.debug:
+      msg: "Hi, we are learning {{courses}} from Trainer {{Trainer}}, Duraction is {{Duraction}}."
+
+  - name: print information
+    ansible.builtin.debug:
+      msg: "Hi, we are learning {{courses}} from Trainer {{Trainer}}, Duraction is {{Duraction}}."
