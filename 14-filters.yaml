@@ -45,9 +45,9 @@
   hosts: localhost
   vars:
     my_dict: # this is called as dictionary or map or key/value pairs
-    course: Ansible 
-    Trainer: Hemanth 
-    Duraction: 120hr
+      course: Ansible 
+      Trainer: Hemanth 
+      Duraction: 120hr
   tasks:
   - name: before convert
     ansible.builtin.debug:
