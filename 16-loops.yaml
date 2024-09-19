@@ -1,5 +1,5 @@
 - name:  download apps
-  hosts: 172.31.44.84
+  hosts: web
   become: yes
   tasks:
   - name: install packages
