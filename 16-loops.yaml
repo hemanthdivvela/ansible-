@@ -1,9 +1,11 @@
 - name:  download apps
   hosts: 172.31.44.84
-  becomes: yes
+  become: yes
   tasks:
-  - name: {{ item }}
-    state: latest
+  - name: install packages
+    ansible.builtin.dnf:
+      name: "{{ item }}"
+      state: latest
     loop:
     - nginx
     - mysql
