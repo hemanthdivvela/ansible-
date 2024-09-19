@@ -1,0 +1,9 @@
+- name:  download apps
+  hosts: 172.31.44.84
+  becomes: yes
+  tasks:
+  - name: {{ item }}
+    state: latest
+    loop:
+    - nginx
+    - mysql
