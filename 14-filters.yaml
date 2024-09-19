@@ -51,4 +51,4 @@
   tasks:
   - name: before convert
     ansible.builtin.debug:
-    msg: "Before convert: {{ my_dict }}"
+      msg: "Before convert: {{ my_dict }}"
