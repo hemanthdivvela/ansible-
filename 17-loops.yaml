@@ -1,0 +1,11 @@
+- name:  download apps
+  hosts: web
+  become: yes
+  tasks:
+  - name: install packages
+    ansible.builtin.dnf:
+      name: "{{ item.name }}"
+      state: "{{ latest.state }}"
+    loop:
+    - {name: "mysql", state: 'latest'}
+    - {name: 'nginx', state: 'absent'}
